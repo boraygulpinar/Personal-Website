@@ -18,7 +18,7 @@ body {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
-    object-position: center center;
+    object-position: center;
     z-index: -1;
 }
 
@@ -72,5 +72,22 @@ body {
     .project-card {
         padding: 10px;
         /* Mobilde kartlardaki padding'i azaltma */
+    }
+}
+
+/* Mobil uyumlu tasarım için medya sorguları */
+@media (max-width: 768px) {
+    .video-background {
+        object-position: top;
+        /* Daha küçük ekranlar için videonun üst kısmına odaklan */
+    }
+}
+
+@media (max-width: 480px) {
+    .video-background {
+        height: auto;
+        /* Yüksekliği otomatik yap */
+        min-height: 100vh;
+        /* Minimum yüksekliği ekran boyutuna eşitle */
     }
 }
