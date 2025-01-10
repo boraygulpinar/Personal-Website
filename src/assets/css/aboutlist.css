@@ -1,0 +1,85 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 0 20px;
+    width: 100%;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.list-container ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.list-container li {
+    margin: 10px 0;
+    font-size: 20px;
+    text-align: left;
+}
+
+.list-container li:before {
+    content: "➡️";
+    margin-right: 10px;
+    font-size: 22px;
+}
+
+
+
+
+/* Responsive tasarım için medya sorguları */
+@media (max-width: 1024px) {
+    .list-container {
+        padding: 0 10%;
+    }
+
+    .list-container li {
+        font-size: 18px;
+        /* Daha küçük ekranlarda yazı boyutunu küçültme */
+    }
+}
+
+@media (max-width: 768px) {
+    .list-container {
+        padding: 0 5%;
+        /* Daha küçük ekranlar için padding azaltma */
+    }
+
+    .list-container li {
+        font-size: 16px;
+        /* Mobil ekranlar için daha küçük yazı boyutu */
+    }
+
+    .list-container li:before {
+        font-size: 20px;
+        /* Mobilde ok simgesini biraz küçültme */
+    }
+}
+
+@media (max-width: 480px) {
+    .list-container {
+        padding: 0 3%;
+        /* Mobil cihazlar için daha küçük padding */
+    }
+
+    .list-container li {
+        font-size: 14px;
+        /* Çok küçük ekranlarda yazı boyutunu daha da küçültme */
+    }
+
+    .list-container li:before {
+        font-size: 18px;
+        /* Ok simgesini daha da küçültme */
+    }
+}

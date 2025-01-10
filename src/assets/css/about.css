@@ -1,0 +1,104 @@
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.about-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.about-card span {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.about-card span>span {
+    font-weight: 600;
+}
+
+.about-card .profile-image img {
+    width: 170px;
+    height: 170px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+
+
+/* Responsive tasarım için medya sorguları */
+@media (max-width: 1024px) {
+    .about-container {
+        padding: 0 10%;
+        /* Orta büyüklükte ekranlar için padding'i azaltma */
+    }
+
+    .about-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-card span {
+        font-size: 24px;
+        /* Font boyutunu biraz küçültme */
+    }
+
+    .about-card .profile-image img {
+        width: 150px;
+        /* Profil resmini daha küçük yapma */
+        height: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        padding: 0 5%;
+        /* Mobil uyum için daha küçük padding */
+    }
+
+    .about-card {
+        padding: 20px;
+    }
+
+    .about-card span {
+        font-size: 20px;
+        /* Font boyutunu daha da küçültme */
+    }
+
+    .about-card .profile-image img {
+        width: 130px;
+        /* Profil resmini daha da küçük yapma */
+        height: 130px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-card {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .about-card span {
+        font-size: 18px;
+        /* Font boyutunu daha da küçültme */
+    }
+
+    .about-card .profile-image img {
+        width: 120px;
+        /* Profil resmini küçük yapma */
+        height: 120px;
+    }
+}
