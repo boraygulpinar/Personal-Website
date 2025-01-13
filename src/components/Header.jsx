@@ -5,7 +5,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import HomeIcon from '@mui/icons-material/Home';
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
-import resume from '../assets/pdf/cv_boray_gulpinar.pdf'
+import resume from '../assets/pdf/cv-boray-gulpinar.pdf'
 import React from 'react';
 import '../assets/css/header.css'
 
