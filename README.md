@@ -6,7 +6,7 @@
 </h1>
 
 <p align="center">
-  • <a href="boraygulpinar.netlify.app">boraygulpinar.netlify.app</a> •
+  • <a href="https://boraygulpinar.netlify.app">boraygulpinar.netlify.app</a> •
 </p>
 
 
